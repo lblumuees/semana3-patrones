@@ -1,4 +1,4 @@
-# Semana 3 - Patrones de Diseño en Python
+# Semana 3 - Patrones de diseño Factory Method y Builder 
 
 Este proyecto implementa dos patrones de diseño creacionales: **Factory Method** y **Builder**, aplicados al contexto de un sistema de tutorías.  
 El objetivo es demostrar cómo estos patrones ayudan a mejorar la extensibilidad, legibilidad y organización del código.
