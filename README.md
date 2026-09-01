@@ -7,28 +7,30 @@ El objetivo es demostrar cómo estos patrones ayudan a mejorar la extensibilidad
 
 ## 📂 Estructura del repositorio
 
+```bash
 semana3-patrones/
 ├── README.md
-├── docs/                  # Diagramas UML y documentación
+├── docs/
 │   ├── factory-method.puml
 │   ├── factory-method.png
 │   ├── builder.puml
 │   └── builder.png
-├── src/                   # Código fuente en Python
-│   ├── factory/           # Implementación del patrón Factory Method
-│   │   ├── init.py
+├── src/
+│   ├── factory/
+│   │   ├── __init__.py
 │   │   ├── notificacion.py
 │   │   ├── email_factory.py
 │   │   ├── sms_factory.py
 │   │   ├── push_factory.py
 │   │   └── whatsapp_factory.py
-│   └── builder/           # Implementación del patrón Builder
-│       ├── init.py
+│   └── builder/
+│       ├── __init__.py
 │       ├── reserva.py
 │       └── reserva_builder.py
-└── tests/                 # Pruebas unitarias
-├── test_factory.py
-└── test_builder.py
+└── tests/
+    ├── test_factory.py
+    └── test_builder.py
+
 
 
 
