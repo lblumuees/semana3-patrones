@@ -43,37 +43,13 @@ semana3-patrones/
   - `NotificacionEmail`, `NotificacionSMS`, `NotificacionPush`, `NotificacionWhatsApp` (productos concretos)  
   - `EmailFactory`, `SMSFactory`, `PushFactory`, `WhatsAppFactory` (fábricas concretas)  
 
-**Ejemplo de uso:**
-```python
-from src.factory.email_factory import EmailFactory
-
-factory = EmailFactory()
-notif = factory.crear_notificacion()
-notif.enviar("Reunión confirmada para mañana a las 10 AM")
-
 
 ### 🔹 Builder
 - **Problema que resuelve: construcción de objetos complejos (Reserva) con parámetros obligatorios y opcionales, evitando constructores telescópicos.
-
 - **Participantes:** 
-
 	- Reserva (producto principal)
 	- ReservaBuilder (builder con Fluent API)
 	
-**Ejemplo de uso:**
-```python
-from datetime import date
-from src.builder import ReservaBuilder
-
-reserva_virtual = ReservaBuilder("Luis", "Tutor Juan", date.today()) \
-    .with_modalidad("virtual") \
-    .with_notas("Traer laptop") \
-    .with_recordatorio(True) \
-    .build()
-
-print(reserva_virtual)
-
-
 
 
 ## Tecnologías
