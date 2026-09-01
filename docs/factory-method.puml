@@ -1,0 +1,24 @@
+@startuml
+interface Notificacion {
+    +enviar(mensaje: str)
+}
+
+class NotificacionEmail implements Notificacion
+class NotificacionSMS implements Notificacion
+class NotificacionPush implements Notificacion
+class NotificacionWhatsApp implements Notificacion
+
+abstract class NotificacionFactory {
+    +crear_notificacion(): Notificacion
+}
+
+class EmailFactory extends NotificacionFactory
+class SMSFactory extends NotificacionFactory
+class PushFactory extends NotificacionFactory
+class WhatsAppFactory extends NotificacionFactory
+
+EmailFactory --> NotificacionEmail
+SMSFactory --> NotificacionSMS
+PushFactory --> NotificacionPush
+WhatsAppFactory --> NotificacionWhatsApp
+@enduml

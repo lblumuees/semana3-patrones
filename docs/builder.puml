@@ -1,0 +1,23 @@
+@startuml
+class Reserva {
+    -estudiante: str
+    -tutor: str
+    -fecha: date
+    -modalidad: str = "presencial"
+    -notas: str = ""
+    -recordatorio: bool = False
+    -lugar: str
+    -duracion: int
+}
+
+class ReservaBuilder {
+    +with_modalidad(modalidad: str): ReservaBuilder
+    +with_notas(notas: str): ReservaBuilder
+    +with_recordatorio(recordatorio: bool): ReservaBuilder
+    +with_lugar(lugar: str): ReservaBuilder
+    +with_duracion(duracion: int): ReservaBuilder
+    +build(): Reserva
+}
+
+ReservaBuilder --> Reserva
+@enduml
