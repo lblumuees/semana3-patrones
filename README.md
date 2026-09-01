@@ -45,7 +45,7 @@ semana3-patrones/
 
 
 ### 🔹 Builder
-- **Problema que resuelve: construcción de objetos complejos (Reserva) con parámetros obligatorios y opcionales, evitando constructores telescópicos.
+- **Problema que resuelve:** construcción de objetos complejos (Reserva) con parámetros obligatorios y opcionales, evitando constructores telescópicos.
 - **Participantes:** 
 	- Reserva (producto principal)
 	- ReservaBuilder (builder con Fluent API)
